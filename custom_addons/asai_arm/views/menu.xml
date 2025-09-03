@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+  <!-- Корневое меню приложения -->
+  <menuitem id="menu_asai_root" name="АСАИ"/>
+
+  <!-- Пункт меню для списка заданий -->
+  <menuitem id="menu_asai_job"
+            name="АРМ оператора"
+            parent="menu_asai_root"
+            action="action_asai_job"/>
+</odoo>
+

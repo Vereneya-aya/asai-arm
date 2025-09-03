@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+asai_job_user,asai_job_user,model_asai_job,base.group_user,1,1,1,1
+asai_job_super,asai_job_super,model_asai_job,base.group_system,1,1,1,1

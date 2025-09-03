@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <!-- Готовы к работе -->
+    <record id="asai_job_demo_1" model="asai.job">
+        <field name="name">Заказ #1001 — раскрой полок</field>
+        <field name="stage">cut</field>
+        <field name="priority">1</field>
+        <field name="status">ready</field>
+    </record>
+    <record id="asai_job_demo_2" model="asai.job">
+        <field name="name">Заказ #1002 — кромка фасадов</field>
+        <field name="stage">edge</field>
+        <field name="priority">2</field>
+        <field name="status">ready</field>
+    </record>
+    <record id="asai_job_demo_3" model="asai.job">
+        <field name="name">Заказ #1003 — присадка деталей шкафа</field>
+        <field name="stage">drill</field>
+        <field name="priority">3</field>
+        <field name="status">ready</field>
+    </record>
+
+    <!-- В работе -->
+    <record id="asai_job_demo_4" model="asai.job">
+        <field name="name">Заказ #1004 — присадка дверей</field>
+        <field name="stage">drill</field>
+        <field name="priority">2</field>
+        <field name="status">in_progress</field>
+        <field name="start_time">2025-09-02 09:00:00</field>
+    </record>
+    <record id="asai_job_demo_5" model="asai.job">
+        <field name="name">Заказ #1005 — упаковка комплекта</field>
+        <field name="stage">pack</field>
+        <field name="priority">3</field>
+        <field name="status">in_progress</field>
+        <field name="start_time">2025-09-02 10:00:00</field>
+    </record>
+
+    <!-- Готово -->
+    <record id="asai_job_demo_6" model="asai.job">
+        <field name="name">Заказ #1006 — раскрой столешницы</field>
+        <field name="stage">cut</field>
+        <field name="priority">1</field>
+        <field name="status">done</field>
+        <field name="start_time">2025-09-01 08:00:00</field>
+        <field name="end_time">2025-09-01 12:00:00</field>
+    </record>
+    <record id="asai_job_demo_7" model="asai.job">
+        <field name="name">Заказ #1007 — упаковка кухни</field>
+        <field name="stage">pack</field>
+        <field name="priority">2</field>
+        <field name="status">done</field>
+        <field name="start_time">2025-09-01 09:00:00</field>
+        <field name="end_time">2025-09-01 15:00:00</field>
+    </record>
+
+    <!-- Брак -->
+    <record id="asai_job_demo_8" model="asai.job">
+        <field name="name">Заказ #1008 — кромка полки</field>
+        <field name="stage">edge</field>
+        <field name="priority">1</field>
+        <field name="status">scrap</field>
+    </record>
+    <record id="asai_job_demo_9" model="asai.job">
+        <field name="name">Заказ #1009 — присадка фасада</field>
+        <field name="stage">drill</field>
+        <field name="priority">2</field>
+        <field name="status">scrap</field>
+    </record>
+
+    <!-- Невозможно выполнить -->
+    <record id="asai_job_demo_10" model="asai.job">
+        <field name="name">Заказ #1010 — раскрой нестандартной детали</field>
+        <field name="stage">cut</field>
+        <field name="priority">5</field>
+        <field name="status">blocked</field>
+    </record>
+    <record id="asai_job_demo_11" model="asai.job">
+        <field name="name">Заказ #1011 — упаковка нестандартного комплекта</field>
+        <field name="stage">pack</field>
+        <field name="priority">4</field>
+        <field name="status">blocked</field>
+    </record>
+
+</odoo>
