@@ -18,3 +18,5 @@ __pycache__/
 *.zip
 *.pot
 *.mo
+
+.env
