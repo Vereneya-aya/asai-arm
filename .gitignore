@@ -1,10 +1,20 @@
-# python / odoo
+# Python cache
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
 
-# docker volumes
-odoo-data/
-postgres-data/
+# Logs
+*.log
 
-# env
-.env
+# IDE settings
+.idea/
+.vscode/
+
+# System files
+.DS_Store
+
+# Odoo sessions / temp
+*.zip
+*.pot
+*.mo
