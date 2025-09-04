@@ -84,3 +84,5 @@ docker compose run --rm odoo odoo -i asai_arm --test-enable --stop-after-init
 ```
 Покрыто: создание задания; переход «В работе»; завершение «ГОТОВО» (проверка времени окончания); запрет «Брак» без причины; «Брак» с причиной; «Невозможно выполнить» с обязательной причиной.
 
+![Demo_tasks_main](docs/images/tasks_main.png)
+![Demo_task_details](docs/images/task_details.png)
